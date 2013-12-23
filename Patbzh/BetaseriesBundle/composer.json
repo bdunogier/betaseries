@@ -7,12 +7,12 @@
     "authors": [
         {
             "name": "Patrick Coustans",
-            "email": "patrick.coustans@gmail.com",
+            "email": "patrick.coustans@gmail.com"
         }
     ],
     "require": {
         "php": ">=5.3.2",
-        "symfony/framework-bundle": ">=2.3",
+        "symfony/framework-bundle": ">=2.3"
     },
     "suggest": {
         "sensio/buzz-bundle":"HTTP client used to call api",

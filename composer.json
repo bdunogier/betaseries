@@ -7,17 +7,17 @@
     "authors": [
         {
             "name": "Patrick Coustans",
-            "email": "patrick.coustans@gmail.com",
+            "email": "patrick.coustans@gmail.com"
         }
     ],
     "require": {
         "php": ">=5.3.2",
-        "symfony/framework-bundle": ">=2.3",
+        "symfony/framework-bundle": ">=2.3"
     },
     "suggest": {
-        "sensio/buzz-bundle":"dev-master",
-        "olegstepura/sensio-buzz-profiler-bundle": "dev-master",
-        "hwi/oauth-bundle": "0.3.*@dev"
+        "sensio/buzz-bundle":"HTTP client used to call api",
+        "olegstepura/sensio-buzz-profiler-bundle": "Profiler toolbar extension for buzz bundle",
+        "hwi/oauth-bundle": "Oauth bundle for user information"
     },
     "autoload": {
         "psr-0": { "Patbzh\\BetaseriesBundle": "" }
