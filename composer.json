@@ -20,7 +20,7 @@
         "hwi/oauth-bundle": "Oauth bundle for user information"
     },
     "autoload": {
-        "psr-0": { "Patbzh/BetaseriesBundle": "" }
+        "psr-0": { "Patbzh\\BetaseriesBundle\\": "" }
     },
     "minimum-stability": "dev"
 }
