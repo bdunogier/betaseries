@@ -19,6 +19,8 @@
         "olegstepura/sensio-buzz-profiler-bundle": "Profiler toolbar extension for buzz bundle",
         "hwi/oauth-bundle": "Oauth bundle for user information"
     },
-    "target-dir": "Patbzh/BetaseriesBundle",
+    "autoload": {
+        "psr-0": { "Patbzh/BetaseriesBundle": "" }
+    },
     "minimum-stability": "dev"
 }
