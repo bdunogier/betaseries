@@ -1,6 +1,6 @@
 <?php
 
-namespace Sensio\Bundle\BuzzBundle\DependencyInjection;
+namespace Patbzh\BetaseriesBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
