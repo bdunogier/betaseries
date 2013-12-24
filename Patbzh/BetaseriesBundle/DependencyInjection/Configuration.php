@@ -38,6 +38,8 @@ class Configuration implements ConfigurationInterface
                     ->end()
                 ->scalarNode('betaseries_default_oauth_key')
                     ->end()
+                ->scalarNode('betaseries_default_oauth_user_token')
+                    ->end()
                 ->scalarNode('betaseries_user_agent')
 		    ->defaultValue('betaseries_patbzh_sf2_bundle')
                     ->end()

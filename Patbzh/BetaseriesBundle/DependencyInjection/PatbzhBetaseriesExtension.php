@@ -19,15 +19,14 @@ class PatbzhBetaseriesExtension extends Extension
         $configuration = $this->getConfiguration($configs, $container);
         $config = $this->processConfiguration($configuration, $configs);
 
-/*
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('buzz.xml');
-        $container->setParameter('buzz.client.timeout', $config['client_timeout']);
-*/
+        $loader->load('client.xml');
 
         $container->setParameter('patbzh.betaseries.http_client_timeout', $config['http_client_timeout']);
         $container->setParameter('patbzh.betaseries.key', $config['betaseries_key']);
         $container->setParameter('patbzh.betaseries.api_version', $config['betaseries_api_version']);
+        $container->setParameter('patbzh.betaseries.oauth_user_token', $config['betaseries_default_oauth_user_token']);
         $container->setParameter('patbzh.betaseries.default_oauth_key', $config['betaseries_default_oauth_key']);
         $container->setParameter('patbzh.betaseries.user_agent', $config['betaseries_user_agent']);
     }

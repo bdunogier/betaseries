@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="patbzh.client.class">Patbzh\BetaseriesBundle\Model\Client</parameter>
+    </parameters>
+
+    <services>
+        <service id="patbzh.client" class="%patbzh.client.class%">
+            <call method="setHttpClient">
+		<argument type="service" id="buzz.client" />
+            </call>
+            <call method="setApiVersion">
+                <argument>%patbzh.betaseries.api_version%</argument>
+            </call>
+            <call method="setApiKey">
+                <argument>%patbzh.betaseries.key%</argument>
+            </call>
+            <call method="setOauthUserToken">
+                <argument>%patbzh.betaseries.oauth_user_token%</argument>
+            </call>
+            <call method="setUserAgent">
+                <argument>%patbzh.betaseries.user_agent%</argument>
+            </call>
+        </service>
+    </services>
+</container>
+
