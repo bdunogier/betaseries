@@ -1941,7 +1941,7 @@ class Client
     public function listShows($order=null, $since=null) {
         // Parameters validation
         if(!is_null($since) && !($since instanceof \DateTime)) throw new \InvalidArgumentException('$since should be a \DateTime');
-        if(!in_array($order, array('alphabetical','popularity'))) throw new \InvalidArgumentException('$order parameter should be one of this value alphabetical|popularity');
+        if(!is_null($order) && !in_array($order, array('alphabetical','popularity'))) throw new \InvalidArgumentException('$order parameter should be one of this value alphabetical|popularity');
 
         // Setting parameters
         $params = array();
