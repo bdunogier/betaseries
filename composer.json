@@ -12,7 +12,7 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "symfony/framework-bundle": ">=2.3"
+        "symfony/framework-bundle": ">=2.3",
         "sensio/buzz-bundle":"HTTP client used to call api",
         "olegstepura/sensio-buzz-profiler-bundle": "Profiler toolbar extension for buzz bundle"
     },
