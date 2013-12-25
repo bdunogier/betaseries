@@ -5,6 +5,11 @@ use Buzz\Message\Request;
 use Buzz\Message\Response;
 use Patbzh\BetaseriesBundle\Exception\PatbzhBetaseriesException;
 
+/**
+ * Client API to make requests to Betaseries
+ *
+ * @author Patrick Coustans <patrick.coustans@gmail.com>
+ */
 class Client
 {
     /**********************
